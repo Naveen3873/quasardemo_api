@@ -25,7 +25,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 @RequestMapping(value = "/image")
 public class ImageController {
 	
-	public final String storageDirectoryPath = "../../images";
+	public final String storageDirectoryPath = "../../../images";
 	
 	@PostMapping(value = "/upload")
 	public ResponseEntity<?> upload(@RequestParam MultipartFile file) throws IOException{
